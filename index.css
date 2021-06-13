@@ -1,0 +1,227 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.6s ease;
+}
+.containor 
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.form
+{
+    width: 50%;
+    height: 100vh;
+    background-color: #796BCB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.results 
+{
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    
+
+
+}
+.form_containor
+{
+    border: none;
+    width: 492px;
+    height: 512px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.25);
+-webkit-box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.25);
+    
+
+}
+
+
+form 
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+
+
+}
+#formuser_name , #formuser_email , #formuser_website, #formuser_imagelink
+{
+    width: 415px;
+    height: 45px;
+    border-radius: 27.5px;
+    margin: 10px;
+    border: 1px solid #7567C3;
+
+}
+
+.forma
+
+{
+    margin-top: -40px;
+    
+    
+    background-color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form_containor p
+{
+    z-index: 9999;
+    margin-top: -50px;
+    margin-top: 10px;
+    font-weight: 700;
+    
+    font-size: 45px;
+    color: #796BCB;
+    margin-left: 10px;
+    
+
+    
+}
+::placeholder
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-left: 30px;
+    color: rgba(121, 107, 203, 73%);
+}
+
+.formuser_btn
+{
+    position: absolute;
+    bottom: 8.37%;
+    
+    right: 5.8%;
+    color: white;
+    background-color: #554B8F;
+    border: none;
+    padding: 15px 210px 15px 220px ;
+    font-size: 18px;
+}
+.gender
+{
+    height: 45px;
+    width: 415px;
+    border: 1px solid  #796BCB;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.gender_type
+
+{
+    display: flex;
+    flex-direction: row;
+}
+.malegender, .femalegender
+
+{
+    cursor: pointer;
+    color: #554B8F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 56px;
+    background-color: white;
+
+}
+.femalegender, .malegender
+{
+    border-left: 1px solid #796BCB ;
+    border-bottom: 1px solid #796BCB;
+
+}
+
+.active 
+{
+    background-color: #796BCB;
+    color: white;
+}
+.gender p
+{
+    color: rgba(121, 107, 203, 73%);
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: -10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+/* //to be added when female  */
+.btnfemale 
+{
+    background-color: #D64C8F;
+    
+    
+}
+
+
+.allfemale 
+{
+    background-color: #E15197;
+
+    
+
+}
+
+.femalefont
+{
+    color: #E15197;
+    
+    
+}
+
+.female 
+{
+    background-color: #E15197;
+    color: white;
+    border: 1px solid #E15197 ;
+}
+
+.femaleplaceholder::placeholder {
+    color: rgba(218, 78,146,73%);
+ }
+ input[type=text], select {
+  
+    padding-left: 20px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+  
+  
+    
+    
+  }
+  #formuser_name , #formuser_email, #formuser_imagelink, #formuser_website
+  {
+      outline: none;
+      
+  }
