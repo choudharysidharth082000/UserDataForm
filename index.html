@@ -36,9 +36,37 @@
 
        
 
-        <div class="results">
+        <div class="results" id="results">
 
+            <div class="result_content">
+
+                <div class="result_content_upper">
+
+                        <div class="result_content_image">
+                            <img src="https://4.bp.blogspot.com/-ZW8grkX6JM0/V2lYwgVVSJI/AAAAAAAAN8E/-MnDAGk6_fwKx45aT4WjiYJf3A8DMyzVwCLcB/s1600/2%2BProfessional%2BHeadshots%2Bfor%2BLinkedIn%2BSudeep%2BStudio.jpg" alt="image">
+                        </div>
+
+                        <div class="result_content_information">
+                            <h3>Sidharth Choudhary</h3>
+                            <p>choudharysidharth082000@gmail.com</p>
+                            <p>Example</p>
+                        </div>
+                </div>
+
+
+                <div class="result_button">
+                    <button onclick="preview()" id="result_button_website" class="result_button_website">View Website</button>
+                </div>
+    
+            </div>
+            
+            
+
+           
         </div>
+
+
+        <!-- This is the form page where the user will write the data -->
 
 
         <div class="form" id="form">
@@ -51,12 +79,6 @@
 
 
                     <form action="" id="formuser" class="formsuser"> 
-
-                        <input id="formuser_name" type="text" autocomplete="off" placeholder="Name">
-                        <input id="formuser_email" type="text" autocomplete="off" placeholder="Email">
-                        <input id="formuser_imagelink" type="text" autocomplete="off" placeholder="Image Link">
-                        <input id="formuser_website" type="text" autocomplete="off" placeholder="Website">
-
                         <div class="gender" id="gender">
                             <p>Gender</p>
                             <div class="gender_type">
@@ -70,6 +92,14 @@
                             </div>
                         </div>
 
+
+                        <input id="formuser_name" type="text" autocomplete="off" placeholder="Name">
+                        
+                        <input id="formuser_email" type="text" autocomplete="off" placeholder="Email">
+                        <input id="formuser_imagelink" type="text" autocomplete="off" placeholder="Image Link">
+                        <input id="formuser_website" type="text" autocomplete="off" placeholder="Website">
+
+                       
                         <!-- working on it  -->
 
                         <div class="skills">
@@ -77,7 +107,7 @@
                         </div>
 
                         <div class="formbutton">
-                            <button id="formuser_btn" class="formuser_btn">Submit</button>
+                            <button type="submit" id="formuser_btn" class="formuser_btn">Submit</button>
                         </div>
                         
 
