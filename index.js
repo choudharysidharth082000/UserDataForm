@@ -25,6 +25,7 @@ console.log(mainbuttons[1]);
 
 
 
+
 // for the values int the result section
 
 formname = document.getElementById('formuser_name');
@@ -121,127 +122,144 @@ mainform.addEventListener('submit', (e)=>
 
     // working on this feature to have value from form and displaying it
 
-    console.log(formname.value);
-    console.log(formemail.value);
-    console.log(formwebsite.value);
-    console.log(formimage.value);
 
-
-    const result_content = document.createElement('div');
-    const result_content_upper = document.createElement('div');
-    const result_content_image = document.createElement('div');
-    const result_content_information = document.createElement('div');
-    const result_button = document.createElement('div');
-
-
-
-    // making the attributes for the containor of result 
-
-
-    const image = document.createElement('img');
-    const h3 = document.createElement('h3');
-    const p1 = document.createElement('p');
-    const p2 = document.createElement('p');
-    globalThis.button = document.createElement('button');
-
-
-    button.onclick = ()=>
+    if(formname.value == '' || formemail.value == '' || formimage.value == '' ||formwebsite.value=='')
     {
-        window.open(formwebsite.value);
-    }
+        alert('Fields are empty');
 
-
-    //putting classes in the attributes 
-
-    button.classList.add('result_button_website');
-
-    
-
-
-
-    // putting values in the attributes 
-
-    image.src = formimage.value;
-    
-    h3.innerText = formname.value;
-    p1.innerText = formemail.value;
-    if(male == true)
-    {
-
-        p2.innerText =' Male';
-
+        formemail.value ='';
+        formname.value ='';
+        formwebsite.value ='';
+        formimage.value ='';
     }
     else
     {
-        p2.innerText = 'Female';
+        const result_content = document.createElement('div');
+        const result_content_upper = document.createElement('div');
+        const result_content_image = document.createElement('div');
+        const result_content_information = document.createElement('div');
+        const result_button = document.createElement('div');
+    
+    
+    
+        // making the attributes for the containor of result 
+    
+    
+        const image = document.createElement('img');
+        const h3 = document.createElement('h3');
+        const p1 = document.createElement('p');
+        const p2 = document.createElement('p');
+        button = document.createElement('button');
 
+
+        
+    
+        //putting classes in the attributes 
+    
+        button.classList.add('result_button_website');
+    
+        
+    
+    
+    
+        // putting values in the attributes 
+    
+        image.src = formimage.value;
+        
+        h3.innerText = formname.value;
+        p1.innerText = formemail.value;
+        if(male == true)
+        {
+    
+            p2.innerText =' Male';
+    
+        }
+        else
+        {
+            p2.innerText = 'Female';
+    
+        }
+        button.innerText ='View Website'
+    
+    
+    
+        
+        
+    
+    
+    
+    
+        // adding classes to the elements
+    
+    
+        result_content.classList.add('result_content');
+        result_content_upper.classList.add('result_content_upper');
+        result_content_image.classList.add('result_content_image');
+        result_content_information.classList.add('result_content_information');
+        result_button.classList.add('result_button');
+    
+    
+    
+    
+       
+    
+        result_content.appendChild(result_content_upper);
+        result_content_upper.appendChild(result_content_image);
+        result_content_upper.appendChild(result_content_information);
+    
+    
+        result_content.appendChild(result_button);
+    
+        //apending the attributes to the the desired divs
+    
+        result_content_image.appendChild(image);
+    
+        result_content_information.appendChild(h3);
+        result_content_information.appendChild(p1);
+        result_content_information.appendChild(p2);
+        result_button.appendChild(button);
+        console.log(formwebsite.value);
+    
+    
+        button.onclick = ()=>
+        {
+            window.open(formwebsite.value);
+        }
+    
+    
+    
+    
+        results.appendChild(result_content);
+        formname.value = '';
+        formemail.value ='';
+        // formwebsite.value = '';
+        formimage.value= '';
+    
+    
+    
+    
+    
+       
+    
+    
+    
+        
+    
+    
+        
+    
+    
+    
+        
+        
+        
     }
-    button.innerText ='View Website'
-
 
 
     
-    
-
-
-
-
-    // adding classes to the elements
-
-
-    result_content.classList.add('result_content');
-    result_content_upper.classList.add('result_content_upper');
-    result_content_image.classList.add('result_content_image');
-    result_content_information.classList.add('result_content_information');
-    result_button.classList.add('result_button');
-
-
-
 
    
 
-    result_content.appendChild(result_content_upper);
-    result_content_upper.appendChild(result_content_image);
-    result_content_upper.appendChild(result_content_information);
-
-
-    result_content.appendChild(result_button);
-
-    //apending the attributes to the the desired divs
-
-    result_content_image.appendChild(image);
-
-    result_content_information.appendChild(h3);
-    result_content_information.appendChild(p1);
-    result_content_information.appendChild(p2);
-    result_button.appendChild(button);
-
-
-
-    results.appendChild(result_content);
-    formname.value = '';
-    formemail.value ='';
-    formwebsite.value = '';
-    formimage.value= '';
-
-
-
-
-
-   
-
-
-
-    
-
-
-    
-
-
-
-    
-    
-    
 })
 
 

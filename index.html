@@ -7,11 +7,12 @@
 
 
     <!-- linking the font awsome cdn -->
+    <script src="https://kit.fontawesome.com/e32170925e.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
 
 
-    <script src="https://kit.fontawesome.com/e32170925e.js" crossorigin="anonymous"></script>
+    
 
 
 
@@ -28,11 +29,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>User Information Form</title>
 </head>
 <body>
 
-    <div class="containor">
+
+    
+
+
+    <div class="containor" id="containor">
 
        
 
@@ -79,6 +85,12 @@
 
 
                     <form action="" id="formuser" class="formsuser"> 
+                        
+                        <input id="formuser_name" type="text" autocomplete="off" placeholder="Name">
+                        
+                        <input id="formuser_email" type="text" autocomplete="off" placeholder="Email">
+                        <input id="formuser_imagelink" type="text" autocomplete="off" placeholder="Image Link">
+                        <input id="formuser_website" type="text" autocomplete="off" placeholder="Website">
                         <div class="gender" id="gender">
                             <p>Gender</p>
                             <div class="gender_type">
@@ -90,21 +102,13 @@
                                     <i class="fas fa-male"></i>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
 
 
-                        <input id="formuser_name" type="text" autocomplete="off" placeholder="Name">
-                        
-                        <input id="formuser_email" type="text" autocomplete="off" placeholder="Email">
-                        <input id="formuser_imagelink" type="text" autocomplete="off" placeholder="Image Link">
-                        <input id="formuser_website" type="text" autocomplete="off" placeholder="Website">
-
+                         
                        
                         <!-- working on it  -->
 
-                        <div class="skills">
-
-                        </div>
 
                         <div class="formbutton">
                             <button type="submit" id="formuser_btn" class="formuser_btn">Submit</button>
@@ -139,8 +143,12 @@
     </div>
 
     <!-- linking the javascript file  -->
+    
+    
 
     <script src="index.js"></script>
+    
+
     
 </body>
 </html>
